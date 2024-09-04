@@ -1,0 +1,123 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$project-primary-light: mat.define-palette(mat.$cyan-palette);
+$project-accent-light: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$project-warn-light: mat.define-palette(mat.$red-palette);
+
+$project-primary-dark: mat.define-palette(mat.$teal-palette);
+$project-accent-dark: mat.define-palette(mat.$teal-palette, A200, A100, A400);
+$project-warn-dark: mat.define-palette(mat.$red-palette);
+
+$project-theme-light: mat.define-light-theme((
+        color: (
+                primary: $project-primary-light,
+                accent: $project-accent-light,
+                warn: $project-warn-light,
+        )
+));
+
+$project-theme-dark: mat.define-dark-theme((
+        color: (
+                primary: $project-primary-dark,
+                accent: $project-accent-dark,
+                warn: $project-warn-dark,
+        )
+));
+
+.theme-dark {
+  @include mat.all-component-themes($project-theme-dark);
+}
+.theme-light {
+  @include mat.all-component-themes($project-theme-light);
+}
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 100px;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 75px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.horizontal-spacer {
+  flex: 1 1 auto;
+}
+
+.padding-5px {
+  padding: 5px;
+}
+
+.padding-left-35px {
+  padding-left: 35px;
+}
+
+.padding-left-10px {
+  padding-left: 10px;
+}
+
+.font-24px {
+  font-size: 24px;
+}
+
+.font-22px {
+  font-size: 22px;
+}
+
+.font-20px {
+  font-size: 20px;
+}
+
+.font-18px {
+  font-size: 18px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

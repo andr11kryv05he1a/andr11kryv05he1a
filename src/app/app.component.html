@@ -1,0 +1,7 @@
+<ng-container *ngIf = "data$ | async as data">
+	<app-header [data] = "data" [darkModeSubject] = "darkModeSubject" class = "header"></app-header>
+	<div class="content mat-app-background">
+		<router-outlet (activate) = "onOutletLoaded($event, data)"></router-outlet>
+	</div>
+	<app-footer [data] = "data" class = "footer"></app-footer>
+</ng-container>

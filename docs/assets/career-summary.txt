@@ -1,0 +1,10 @@
+2016 - 2017 - learning c++, participating in school programming olympiads
+2017 - 2018 - learning python, working on university projects (statistics and data visualization)
+2018 - 2021 - learning a lot of different technologies, working on university projects (cryptography, statistics and data visualization)
+2019 - 2020 - learning Unity, creating my first pet projects using C# along with Unity
+2020 - 2021 - first commercial experience as a unity developer, learning .Net
+2021 - 2023 - working on personal Unity projects, learning DOTS
+August 2021 - June 2022 - junior .Net developer (learning Web stack, sometimes working as a full stack engineer)
+June 2022 - August 2022 - middle .Net developer (most of the time working as a full stack engineer)
+August 2022 - November 2022 - temporary working as a team leader of my team, full stack engineer
+October 2022 - June 2023 - working as a front end engineer (most of the time using Angular)
